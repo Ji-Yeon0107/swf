@@ -6,7 +6,7 @@ const Result = () => {
     const router = useRouter();
     
     const test = () => {
-
+console.log('d')
         Kakao.Link.createCustomButton({
   container: '.kakao-link-btn',
   templateId: 63843,
@@ -23,7 +23,7 @@ const Result = () => {
     return (
       <div>
           <Head />
-        <p className="kakao-link-btn" onClick={()=>{test(); console.log('done')}}>결과 공유하기</p>
+        <p className="kakao-link-btn" onClick={test}>결과 공유하기</p>
     </div>
     );
   }
