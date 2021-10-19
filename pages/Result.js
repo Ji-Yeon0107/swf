@@ -23,7 +23,7 @@ const Result = () => {
     return (
       <div>
           <Head />
-        <p className="kakao-link-btn" onClick={test}>결과입니당</p>
+        <p className="kakao-link-btn" onClick={()=>{test(); console.log('done')}}>결과 공유하기</p>
     </div>
     );
   }
