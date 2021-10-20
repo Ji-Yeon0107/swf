@@ -10,6 +10,7 @@ const Result = (props) => {
   container: '.kakao-link-btn',
   templateId: 63843,
   templateArgs: {
+'score':`${router.query.name}`
     'title': '제목 영역입니다.',
     'description': '설명 영역입니다.'
   }
