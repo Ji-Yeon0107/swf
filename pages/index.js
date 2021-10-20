@@ -1,13 +1,15 @@
 import Link from "next/link";
 import React, {useState} from 'react'
 import {Questions} from '../components/Questions'
+import{questions} from '../data/questions'
 import Head from './Head'
+import Result from "./Result"
 
 const Home = () => {
 
     const [start, setStart]= useState(false);
     const [score, setScore] = useState(0);
-
+    const [showResult, setShowResult] = useState(false);
 
 
     return(
@@ -18,7 +20,7 @@ const Home = () => {
             {
                 start
                 ?(
-                    <Questions score={score} setScore={setScore}></Questions>
+                    <Questions score={score} setScore={setScore} showResult={showResult} setShowResult={setShowResult} ></Questions>
                 )
                 : (
                     <>
@@ -29,6 +31,7 @@ const Home = () => {
                     </>
                 )
             }
+            
             
 
             

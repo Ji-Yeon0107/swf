@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useRouter } from "next/router";
 import Head from './Head'
 
-const Result = () => {
+const Result = (props) => {
     const router = useRouter();
     
     const test = () => {
-console.log('d')
         Kakao.Link.createCustomButton({
   container: '.kakao-link-btn',
   templateId: 63843,
@@ -18,12 +17,16 @@ console.log('d')
 
     }
 
-    
+    // console.log('점수'+props.score+router.query.name)
   
     return (
       <div>
-          <Head />
-        <p className="kakao-link-btn" onClick={test}>결과 공유하기</p>
+        <Head />
+        <h1>당신의 점수는 {router.query.name} 점 입니다.</h1>
+        <button className="kakao-link-btn" onClick={(e)=>{
+          e.preventDefault();
+          test()
+        }}>결과 공유하기</button>
     </div>
     );
   }
