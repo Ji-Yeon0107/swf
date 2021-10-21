@@ -3,9 +3,9 @@ import React, {useState, useEffect} from 'react';
 import {Questions} from '../components/Questions';
 // import Head from './Head'
 import { useRecoilState } from 'recoil';
-import { startState } from '../states';
-import { scoreState } from '../states';
-import { showResultState } from '../states';
+import { startState } from '../states/index';
+import { scoreState } from '../states/index';
+import { showResultState } from '../states/index';
 
 const Home = () => {
 
