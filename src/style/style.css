@@ -1,0 +1,127 @@
+@font-face {
+    font-family: agroL; 
+    src: url("../style/font/SB 어그로 L.ttf"); 
+  }
+  @font-face {
+    font-family: agroM; 
+    src: url("../style/font/SB 어그로 M.ttf"); 
+  }
+  @font-face {
+    font-family: agroB; 
+    src: url("../style/font/SB 어그로 B.ttf"); 
+  }
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-family:agroL;
+    box-sizing:border-box;
+}
+body {
+    width:100vw;
+    height:100vh;
+}
+/* 시작화면 */
+.logo {
+    display:block;
+    margin: 210px auto 100px;
+}
+.start-button {
+    font-family:agroM;
+    outline:none;
+    border:none;
+    background: #A7A8B8;
+    color:rgb(255,255,255);
+    border-radius:50px;
+    text-align:center;
+    width:290px;
+    height:52px;
+    line-height:52px;
+    font-size:24px;
+    margin:0 auto;
+    display:block;
+}
+.wrapper {
+    width:100%;
+    min-height:100vh;
+    background-image: url('../../public/test_bg.png');
+    background-size:cover;
+}
+.inner {
+    width:84%;
+    margin:0 auto;
+    padding-top:40px;
+}
+.question-number {
+    color:rgb(255,255,255);
+    font-size:2.4em;
+    font-family:agroB;
+    margin-bottom:48px;
+}
+.question-imgbox {
+    margin-bottom:35px;
+    text-align:center;
+    height:220px;
+}
+.question-img {
+    height:100%;
+    
+    /* display:block;
+    margin:0 auto;
+    width:100%;
+    height:100%; */
+}
+.question {
+    color:rgb(255,255,255);
+    font-size:1.9em;
+    font-family:agroM;
+    margin-bottom:35px;
+}
+/* 세트 */
+.answer-bg {
+    position:absolute;
+    width:100%;
+    max-height:130px;
+}
+.answer-bg-list {
+    min-height:53px;
+    margin-bottom:20px;
+    border-radius:50px;
+    /* background:rgba(255,255,255,0.8); */
+}
+.answer-number,
+.answer-list {
+    width:100%;
+    text-align:center;
+    height:30px;
+}
+.pre-select {
+    background:rgba(255,255,255,0.8);
+}
+.answer-list-item {
+    min-height:53px;
+    padding:12px;
+    line-height:30px;
+    margin-bottom:20px;
+    font-size:1.4em;
+    border-radius:50px;
+}
+
+
+/* 세트끝
+ */
+.answer {
+    width:100%;
+    position:relative;
+    margin:0 auto;
+    padding:0;
+}
+.answer-box {
+    width:100%;
+    position:absolute;
+    cursor:pointer;
+}
+
+.selected {
+    background:rgba(30, 36, 168,0.8);
+}
