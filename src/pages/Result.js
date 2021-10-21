@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react'
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useRecoilState } from 'recoil'
-import { startState } from '../states/index'
-import { scoreState } from '../states/index';
+import { startState } from '../states'
+import { scoreState } from '../states';
 // import Head from './Head'
 
-const Result = (props) => {
+const Result = () => {
 
     const router = useRouter();
 
